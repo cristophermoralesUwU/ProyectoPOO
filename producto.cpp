@@ -19,3 +19,9 @@ palabra producto_t::get_nombre(){
 numero producto_t::get_codigo(){
     return codigo;
 }
+
+producto_t::producto_t(producto_t &producto) {
+
+}
+
+

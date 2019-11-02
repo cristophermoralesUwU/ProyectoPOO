@@ -27,20 +27,27 @@ numero Almacen_t::get_columnas() {
     return columnas;
 }
 
-Almacen_t::Almacen_t(numero columnas) {
-
+matriz_t Almacen_t::generar_matriz(numero filas, numero columnas) {
+    return matriz_t(filas,row_t(columnas));
 }
 
-Almacen_t::Almacen_t(numero filas, Almacen_t columnas) {
-
+void Almacen_t::rellenar_matriz(matriz_t &m) {
+    for(auto& row: m) {
+        for (auto &item:row) {
+            item = 0;
+        }
+    }
 }
 
-void Almacen_t::crear_almacen(numero filas, numero columnas) {
+void Almacen_t::imprimir_matriz(matriz_t &m) {
+    for (auto &row: m) {
+        for (auto &item: row)
+            cout << setw(4) << item;
+        cout << endl;
 
+    }
 }
 
-void Almacen_t::imprimir_almacen() {
 
-}
 
 
