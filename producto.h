@@ -7,16 +7,18 @@
 #include "importaciones.h"
 using namespace std;
 #include <string>
+
 class producto_t {
 private:
     palabra nombre;
-    numero codigo;
+    palabra codigo;
 public:
     producto_t();
-    producto_t(palabra nombre, numero codigo);
-    producto_t(producto_t& producto);
+    virtual ~producto_t();
+    void setCodigo(palabra m_nombre);
+    void setNombre(palabra m_codigo);
     palabra get_nombre();
-    numero get_codigo();
+    palabra get_codigo();
 };
 
 

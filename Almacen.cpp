@@ -1,17 +1,17 @@
 //
-// Created by USER on 27/10/2019.
+// Created by utec on 22/11/19.
 //
 
 #include "Almacen.h"
 #include "importaciones.h"
 
 Almacen_t::Almacen_t():
-filas(), columnas(){
+        filas(), columnas(){
 
 }
 
 Almacen_t::Almacen_t(numero filas, numero columnas):
-filas(filas),columnas(columnas){
+        filas(filas),columnas(columnas){
 
 }
 
@@ -32,9 +32,10 @@ matriz_t Almacen_t::generar_matriz(numero filas, numero columnas) {
 }
 
 void Almacen_t::rellenar_matriz(matriz_t &m) {
+    numero i=0;
     for(auto& row: m) {
         for (auto &item:row) {
-            item = 0;
+            item=++i;
         }
     }
 }
@@ -46,8 +47,5 @@ void Almacen_t::imprimir_matriz(matriz_t &m) {
         cout << endl;
 
     }
+
 }
-
-
-
-

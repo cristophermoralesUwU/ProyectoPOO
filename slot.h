@@ -7,18 +7,17 @@
 #include "importaciones.h"
 #include "producto.h"
 
-
 class slot_t {
 private:
     numero cantidad;
-    producto_t nombre;
-    producto_t codigo;
+    producto_t* m_producto;
 public:
     slot_t();
-    slot_t(numero cantidad, producto_t nombre, producto_t codigo);
+    virtual ~slot_t();
+    void setProducto(producto_t* pProducto);
+    void setCantidad(numero m_cantidad);
+    void imprimirDatos(ostream &os);
     numero get_cantidad();
-    producto_t get_nombre();
-    producto_t get_codigo();
 };
 
 

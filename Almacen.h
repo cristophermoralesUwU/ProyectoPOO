@@ -2,8 +2,8 @@
 // Created by USER on 27/10/2019.
 //
 
-#ifndef TRABAJOS_ALMACEN_H
-#define TRABAJOS_ALMACEN_H
+#ifndef UWU_ALMACEN_H
+#define UWU_ALMACEN_H
 #include "importaciones.h"
 #include "slot.h"
 #include "producto.h"
@@ -11,6 +11,7 @@
 #include <iomanip>
 typedef vector<numero> row_t;
 typedef vector<row_t> matriz_t;
+
 class Almacen_t {
 private:
     numero filas;
@@ -28,6 +29,7 @@ public:
     void imprimir_matriz(matriz_t& m);
 
 };
+
 
 
 #endif //TRABAJOS_ALMACEN_H
