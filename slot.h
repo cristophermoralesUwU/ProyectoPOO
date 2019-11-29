@@ -4,10 +4,12 @@
 
 #ifndef TRABAJOS_SLOT_H
 #define TRABAJOS_SLOT_H
+
+#include <vector>
 #include "importaciones.h"
 #include "producto.h"
 
-class slot_t {
+class slot_t{
 private:
     numero cantidad;
     producto_t* m_producto;

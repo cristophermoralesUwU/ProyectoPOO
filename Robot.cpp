@@ -7,14 +7,19 @@ robot_t::robot_t() {
 
 }
 
-robot_t::robot_t(palabra nombre, palabra ubi_inicial) {
+
+
+robot_t::robot_t(int finicial, int cinicial):fila_inicial(finicial),columna_inicial(cinicial)
+ {
 
 }
 
-palabra robot_t::get_nombre() {
-    return palabra();
+void robot_t::mover(numero posx, numero posy) {
+    columna=posx;
+    fila=posy;
+
 }
 
-palabra robot_t::get_ubi_inicial() {
-    return palabra();
-}
+
+
+

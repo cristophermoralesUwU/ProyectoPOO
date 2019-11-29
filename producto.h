@@ -15,8 +15,8 @@ private:
 public:
     producto_t();
     virtual ~producto_t();
-    void setCodigo(palabra m_nombre);
-    void setNombre(palabra m_codigo);
+    void setCodigo(palabra m_codigo);
+    void setNombre(palabra m_nombre);
     palabra get_nombre();
     palabra get_codigo();
 };

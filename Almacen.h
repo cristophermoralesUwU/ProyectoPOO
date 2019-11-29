@@ -9,14 +9,13 @@
 #include "producto.h"
 #include <vector>
 #include <iomanip>
-typedef vector<numero> row_t;
-typedef vector<row_t> matriz_t;
 
 class Almacen_t {
 private:
-    numero filas;
-    numero columnas;
+    numero filas=4;
+    numero columnas=4;
     palabra nombre;
+    vector<slot_t*> slots;
 
 public:
     Almacen_t();
@@ -24,9 +23,8 @@ public:
     Almacen_t(Almacen_t& Almacen);
     numero get_filas();
     numero get_columnas();
-    matriz_t generar_matriz(numero filas,numero columnas);
-    void rellenar_matriz(matriz_t& m);
-    void imprimir_matriz(matriz_t& m);
+
+
 
 };
 

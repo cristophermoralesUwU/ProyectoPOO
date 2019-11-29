@@ -5,19 +5,24 @@
 #ifndef PROYECTO_POO_ORDEN_H
 #define PROYECTO_POO_ORDEN_H
 #include "importaciones.h"
-
+#include <vector>
+#include "Robot.h"
+#include "Almacen.h"
 class orden_t {
 private:
-    palabra slot;
-    palabra ubi_final;
-    palabra ubi_inicial;
-
+vector<robot_t*> robots;
+vector<slot_t*> slots;
+vector<producto_t*> productos;
 public:
-    orden_t();
-    orden_t(palabra slot, palabra ubi_final, palabra ubi_inicial);
-    palabra get_slot();
-    palabra get_ubi_inicial();
-    palabra get_ubi_final();
+    void crear_almacen();
+    void crear_robots();
+    void mover_robot_y_AoQ_PC();
+    void crear_productos();
+
+
+
+
+
 
 };
 
